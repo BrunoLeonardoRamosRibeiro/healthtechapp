@@ -1,17 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:healthtechapp/pages/shared/widgets/button_primary_widget.dart';
+import 'package:healthtechapp/pages/shared/widgets/input_primary_widget.dart';
 
 class LoginFormWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
+      height: 300,
       width: double.maxFinite,
       child: Column(
         children: [
           SizedBox(height: 20),
-          Text('Login'),
-          Text('Senha'),
+          InputPrimaryWidget(text: "Usuário" ,),
+          InputPrimaryWidget(text: "Senha", obscureText: true,),
           Spacer(),
           Container(
             child: Row(
@@ -34,7 +35,19 @@ class LoginFormWidget extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
+          FlatButton(
+            onPressed: () {
+              //TODO: Esqueceu a senha
+            },
+            child: Text(
+              'Esqueceu a senha?',
+              style: TextStyle(
+                color: Colors.white,
+                decoration: TextDecoration.underline,
+              ),
+            ),
+          ),
         ],
       ),
     );
