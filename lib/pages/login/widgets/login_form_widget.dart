@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:healthtechapp/pages/register/register_page.dart';
 import 'package:healthtechapp/pages/shared/widgets/button_primary_widget.dart';
 import 'package:healthtechapp/pages/shared/widgets/input_primary_widget.dart';
 
@@ -38,7 +40,7 @@ class LoginFormWidget extends StatelessWidget {
           ),
           FlatButton(
             onPressed: () {
-              //TODO: Esqueceu a senha
+              Get.to(RegisterPage());
             },
             child: Text(
               'Esqueceu a senha?',
