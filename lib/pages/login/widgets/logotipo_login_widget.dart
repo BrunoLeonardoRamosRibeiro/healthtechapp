@@ -4,11 +4,11 @@ class LogotipoLoginWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 150,
-      width: 150,
-      child: Placeholder(
-        color: Colors.white,
-        strokeWidth: 10,
+      height: 200,
+      width: 200,
+      child: Image.asset(
+        'assets/images/HTECH2.png',
+        fit: BoxFit.contain,
       ),
     );
   }

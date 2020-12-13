@@ -11,11 +11,11 @@ class RegisterPage extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: 50,
+                height: 40,
               ),
               Center(
                 child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal:32.0, vertical: 16),
+                  padding: const EdgeInsets.only(left:32.0, top: 16, right: 32, bottom: 0),
                   child: Text(
                     'Vamos criar sua conta',
                     style: TextStyle(color: Colors.white, fontSize: 24, fontWeight: FontWeight.bold),
