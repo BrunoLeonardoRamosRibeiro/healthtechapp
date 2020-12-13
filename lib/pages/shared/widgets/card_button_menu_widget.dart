@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class CardButtonMenuWidget extends StatelessWidget {
   String text;
-  IconData icon;
+  String imagem;
   Function onPressed;
 
-  CardButtonMenuWidget({this.text, this.icon, this.onPressed});
+  CardButtonMenuWidget({this.text, this.imagem, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class CardButtonMenuWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Image.asset(
-              'assets/images/PerfilDeSaude2.png',
+              imagem,
               fit: BoxFit.cover,
             ),
             Container(

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
+import 'package:healthtechapp/pages/book_your_appointment/book_your_appointment_page.dart';
 import 'package:healthtechapp/pages/consultation_guide/consultation_guide_page.dart';
 import 'package:healthtechapp/pages/query_history/query_history_page.dart';
 import 'package:healthtechapp/pages/shared/widgets/card_button_menu_widget.dart';
@@ -122,24 +123,28 @@ class HomePage extends StatelessWidget {
         children: [
           CardButtonMenuWidget(
             text: 'Perfil de Saúde',
+            imagem: 'assets/images/PerfilDeSaude.png',
             onPressed: () {
               Get.to(ConsultationGuidePage());
             },
           ),
           CardButtonMenuWidget(
-            text: ' Marque a Consulta ',
+            text: 'Solicitar Atendimento',
+            imagem: 'assets/images/IniciarConsulta.png',
             onPressed: () {
-              // todo
+              Get.to(BookYourAppointmentPage());
             },
           ),
           CardButtonMenuWidget(
             text: 'Histórico de Consultas',
+            imagem: 'assets/images/HistoricoDeConsultas.png',
             onPressed: () {
               Get.to(QueryHistoryPage());
             },
           ),
           CardButtonMenuWidget(
             text: 'Meus Exames e Consultas',
+            imagem: 'assets/images/MeuExamesEConsultas.png',
             onPressed: () {
               // todo
             },
