@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:healthtechapp/pages/home/home_page.dart';
 import 'package:healthtechapp/pages/register/register_page.dart';
 import 'package:healthtechapp/pages/shared/widgets/button_primary_widget.dart';
 import 'package:healthtechapp/pages/shared/widgets/input_primary_widget.dart';
@@ -25,6 +26,7 @@ class LoginFormWidget extends StatelessWidget {
                   icon: Icons.check,
                   action: () {
                     // TODO: Botão Entrar
+                    Get.to(HomePage());
                   },
                 ),
                 ButtonPrimaryWidget(
@@ -32,7 +34,7 @@ class LoginFormWidget extends StatelessWidget {
                   width: 104,
                   icon: Icons.add,
                   action: () {
-                    // TODO: Botão Entrar
+                    Get.to(RegisterPage());
                   },
                 ),
               ],
