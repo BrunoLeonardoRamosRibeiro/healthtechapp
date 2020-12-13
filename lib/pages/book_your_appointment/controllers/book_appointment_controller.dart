@@ -9,6 +9,9 @@ class BookAppointmentController extends GetxController {
   setEspecialidades(List<Especialidade> value) =>
       especialidades.assignAll(value);
 
+  RxInt codigoSelecionado = RxInt(0);
+  setCodigoSelecionado(int value)=> codigoSelecionado.value = value;
+
   @override
   void onInit() {
     super.onInit();

@@ -11,9 +11,9 @@ class BasicDataFormWidget extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(height: 20),
-          InputPrimaryWidget(text: "Tipo Sanguineo"),
-          InputPrimaryWidget(text: "Idade"),
-          InputPrimaryWidget(text: "Altura"),
+          InputPrimaryWidget(text: "Tipo Sanguineo", ),
+          InputPrimaryWidget(text: "Idade", ),
+          InputPrimaryWidget(text: "Altura", ),
           InputPrimaryWidget(text: "Peso"),
           InputPrimaryWidget(text: "Sexo"),
           InputPrimaryWidget(text: "Estado Civil"),

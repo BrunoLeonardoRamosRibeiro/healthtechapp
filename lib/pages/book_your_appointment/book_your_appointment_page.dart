@@ -1,9 +1,11 @@
+import 'package:cool_alert/cool_alert.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:healthtechapp/pages/book_your_appointment/controllers/book_appointment_controller.dart';
 import 'package:healthtechapp/pages/book_your_appointment/widgets/especialidades_list_widget.dart';
 import 'package:healthtechapp/pages/book_your_appointment/widgets/item_book_appointment_card_widget.dart';
 import 'package:healthtechapp/pages/query_history/widgets/item_query_history_card_widget.dart';
+import 'package:healthtechapp/pages/shared/widgets/button_primary_widget.dart';
 
 class BookYourAppointmentPage extends StatelessWidget {
   @override
@@ -69,7 +71,38 @@ class BookYourAppointmentPage extends StatelessWidget {
                                   ),
                                 ),
                                 Divider(),
-                                EspecialidadesListWidget(),
+                                Container(
+                                    child: EspecialidadesListWidget()
+                                ),
+
+                                Obx(
+                                  ()=> Visibility(
+                                    visible: controller.codigoSelecionado.value != 0,
+                                    child: MaterialButton(
+                                      height: 45,
+                                      color: Colors.blueAccent,
+                                      child: Text('Solicitar Atendimento', style: TextStyle(color: Colors.white),),
+                                      onPressed: (){
+                                        CoolAlert.show(
+                                            onConfirmBtnTap: (){
+                                              Get.back();
+                                              Get.back();
+                                              Get.back();
+                                              Get.snackbar('Solicitação Enviada', "Solicitação enviada com sucesso!");
+                                            },
+                                            context: Get.context,
+                                            type: CoolAlertType.warning,
+                                            title: "Confirma Solicitar o Atendimento?",
+                                            text: "Você enviará suas informações para o hospital.",
+                                            confirmBtnText: "Sim",
+                                            cancelBtnText: "Não",
+                                            showCancelBtn: true,
+                                            confirmBtnColor: Colors.green
+                                        );
+                                      },
+                                    ),
+                                  ),
+                                ),
                               ],
                             ),
                           ),

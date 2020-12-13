@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:healthtechapp/pages/login/login_page.dart';
 import 'package:healthtechapp/pages/shared/widgets/button_border_widget.dart';
 import 'package:healthtechapp/pages/shared/widgets/button_primary_widget.dart';
 import 'package:healthtechapp/pages/shared/widgets/input_primary_widget.dart';
@@ -42,7 +43,7 @@ class RegisterFormWidget extends StatelessWidget {
             borderColor: Colors.blue[200],
             colorButton: Colors.blueAccent,
             onPressed: () {
-              // todo
+              Get.to(LoginPage());
             },
           ),
         ],
