@@ -15,9 +15,9 @@ class CardButtonMenuWidget extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Icon(
-              icon ?? Icons.report,
-              size: 48,
+            Image.asset(
+              'assets/images/PerfilDeSaude2.png',
+              fit: BoxFit.cover,
             ),
             Container(
               width: double.maxFinite,

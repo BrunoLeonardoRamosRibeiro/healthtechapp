@@ -1,29 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:healthtechapp/pages/basic_data/basic_data_page.dart';
 import 'package:healthtechapp/pages/shared/widgets/button_primary_widget.dart';
 import 'package:healthtechapp/pages/shared/widgets/input_primary_widget.dart';
-
-class ConsultationGuideFormWidget extends StatelessWidget {
+class BasicDataFormWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 400,
+      height: 550,
       width: double.maxFinite,
       child: Column(
         children: [
           SizedBox(height: 20),
-          InputPrimaryWidget(text: "Número da Carteira do SUS"),
-          InputPrimaryWidget(text: "Nome Completo"),
-          InputPrimaryWidget(text: "Plano"),
-          InputPrimaryWidget(text: "Validade da Carteira"),
+          InputPrimaryWidget(text: "Tipo Sanguineo"),
+          InputPrimaryWidget(text: "Idade"),
+          InputPrimaryWidget(text: "Altura"),
+          InputPrimaryWidget(text: "Peso"),
+          InputPrimaryWidget(text: "Sexo"),
+          InputPrimaryWidget(text: "Estado Civil"),
           Spacer(),
           ButtonPrimaryWidget(
-            text: 'Atualizar Dados Principais',
-            width: 220,
-            icon: Icons.arrow_forward,
+            text: 'Cadastrar',
+            width: 105,
+            icon: Icons.check,
             action: () {
-              Get.to(BasicDataPage());
+              //Get.to(BasicDataPage());
             },
           ),
         ],

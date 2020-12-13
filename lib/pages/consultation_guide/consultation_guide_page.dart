@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:healthtechapp/pages/consultation_guide/widgets/consultation_guide_form_widget.dart';
-import 'package:healthtechapp/pages/shared/widgets/button_primary_widget.dart';
 
 class ConsultationGuidePage extends StatelessWidget {
   @override

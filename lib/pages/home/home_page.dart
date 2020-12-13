@@ -127,7 +127,7 @@ class HomePage extends StatelessWidget {
             },
           ),
           CardButtonMenuWidget(
-            text: 'Iniciar Consulta',
+            text: ' Marque a Consulta ',
             onPressed: () {
               // todo
             },
